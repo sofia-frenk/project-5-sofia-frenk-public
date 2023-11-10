@@ -1,0 +1,11 @@
+ls
+wr hi hello_world
+ls
+rd hi
+wr bye goodbye_world
+ls
+rd hi
+rd bye
+rm hi
+ls
+qu
