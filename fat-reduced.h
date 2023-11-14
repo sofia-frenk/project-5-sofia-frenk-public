@@ -1,8 +1,8 @@
 /*
  * name: fat-reduced.h
  * last-update:
- * 	13 nov 2022 -bjr: created
- * 	 5 nov 2023 -bjr
+ *     13 nov 2022 -bjr: created
+ *      5 nov 2023 -bjr
  */
 
 #ifndef _FAT_REDUCED_H
@@ -34,20 +34,20 @@
 extern int is_verbose_g ;
 
 struct Actions {
-	char action_name[ACTION_NAME_LEN] ;
-	int action_parameters ;
-	int (*action_function)(int, char *[]) ;
-	} ;
+    char action_name[ACTION_NAME_LEN] ;
+    int action_parameters ;
+    int (*action_function)(int, char *[]) ;
+    } ;
 
 struct  DirEnt {
-	char name[FILENAME_LEN+1] ;
-	unsigned int len ;
-	unsigned int starting_cluster ;
-	} ;
+    char name[FILENAME_LEN+1] ;
+    unsigned int len ;
+    unsigned int starting_cluster ;
+    } ;
 
 struct Cluster {
-	char data[CLUSTER_SIZE] ;
-	} ;
+    char data[CLUSTER_SIZE] ;
+    } ;
 
 void init_fat() ;
 
